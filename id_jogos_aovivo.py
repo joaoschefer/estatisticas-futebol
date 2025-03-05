@@ -1,14 +1,13 @@
 import requests
 
-# URL para obter jogos do dia
+# url que pega os jogos do dia
 url = "https://www.sofascore.com/api/v1/sport/football/events/live"
 
-# Headers para simular navegador
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0"
 }
 
-# Faz a requisição para obter os jogos ao vivo
+# requisição para obter os jogos ao vivo
 response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
